@@ -5,7 +5,7 @@ variable "cluster_name" {
 }
 
 variable "location" {
-  default = "asia-northeast1-a"
+  default = "asia-northeast1-c"
 }
 
 variable "network" {
