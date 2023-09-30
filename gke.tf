@@ -10,14 +10,14 @@ resource "google_container_cluster" "primary" {
   min_master_version = "${var.min_master_version}"
   node_version       = "${var.node_version}"
 
-  master_auth {
-    username = ""
-    password = ""
+  #master_auth {
+  #  username = ""
+  #  password = ""
 
-    client_certificate_config {
-      issue_client_certificate = false
-    }
-  }
+  #  client_certificate_config {
+  #    issue_client_certificate = false
+  #  }
+  #}
 }
 
 resource "google_container_node_pool" "primary_nodes" {
