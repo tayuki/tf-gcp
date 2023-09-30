@@ -28,6 +28,7 @@ resource "google_container_node_pool" "primary_nodes" {
 
   management {
     auto_repair = true
+    auto_uauto_upgrade = true
   }
 
   node_config {
